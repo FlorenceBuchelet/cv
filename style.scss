@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  cursor: crosshair;
+  list-style: none;
+}
+
+header {
+  display: flex;
+  gap: 1%;
+  margin-top: 1vh;
+  justify-content: space-around;
+}
+
+.avatar {
+  width: clamp(10rem, 25%, 16rem);
+  height: 100%;
+  border-radius: 1000px;
+  &:hover {
+    transition: transform 1s ease-in;
+    transform: rotateY(720deg);
+  }
+}
+
+.contact {
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 1%;
+  margin-top: 10vh;
+}
+.logos {
+  & img {
+    height: 10vh;
+    &:hover {
+      transition: transform 0.5s linear;
+      transform: rotateY(360deg);
+    }
+  }
+  & ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.portfolio img {
+  border-radius: 1000px;
+  border: 1px solid black;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+}
