@@ -10,7 +10,6 @@
   --accent-titles: rgb(4, 4, 134);
 }
 
-
 body {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -49,7 +48,6 @@ header {
   border-left: 3vw solid var(--dark-color);
   border-radius: 8px;
   border-bottom-right-radius: 20px;
-
 }
 
 .nameLastname {
@@ -62,33 +60,35 @@ header {
   font-weight: bold;
   background-color: var(--white-color);
   margin-block: 2%;
-  & p {
-    background-color: var(--white-color);
-  }
 }
+
+.contact p {
+  background-color: var(--white-color);
+}
+
 .logos {
   padding: 0.5rem;
   background-color: var(--white-color);
-  & img {
-    height: 7vh;
-    background-color: var(--white-color);
-    &:hover {
-      transition: transform 0.5s linear;
-      transform: rotate(360deg);
-    }
-  }
-  & p,
-  a {
-    background-color: var(--white-color);
-  }
-  & ul {
-    display: flex;
-    margin-left: 0.7vw;
-    float: right;
-    background-color: var(--white-color);
-    justify-content: flex-end;
-    width: fit-content;
-  }
+}
+.logos img {
+  height: 7vh;
+  background-color: var(--white-color);
+}
+.logos img:hover {
+  transition: transform 0.5s linear;
+  transform: rotate(360deg);
+}
+.logos p,
+.logos a {
+  background-color: var(--white-color);
+}
+.logos ul {
+  display: flex;
+  margin-left: 0.7vw;
+  float: right;
+  background-color: var(--white-color);
+  justify-content: flex-end;
+  width: fit-content;
 }
 
 .gitHub {
@@ -129,18 +129,18 @@ article {
   border-bottom-right-radius: 30px;
   border: 1px solid var(--black-color);
   box-shadow: 0px 0px 9px 6px rgba(0, 0, 0, 0.58);
-  & p {
-    border-block: 2vh solid var(--dark-color);
-    border-inline: 2.5vw solid var(--dark-color);
-    border-left: 3vw solid var(--dark-color);
-    border-radius: 8px;
-    border-bottom-right-radius: 20px;
-    height: 80%;
-    width: 80%;
-    margin: 2%;
-    background-color: var(--soft-color);
-    padding: 1%;
-  }
+}
+article p {
+  border-block: 2vh solid var(--dark-color);
+  border-inline: 2.5vw solid var(--dark-color);
+  border-left: 3vw solid var(--dark-color);
+  border-radius: 8px;
+  border-bottom-right-radius: 20px;
+  height: 80%;
+  width: 80%;
+  margin: 2%;
+  background-color: var(--soft-color);
+  padding: 1%;
 }
 
 h2 {
