@@ -1,13 +1,13 @@
 :root {
   cursor: crosshair;
   --accent-color: #882c5b;
-  --dark-color: #787878;
-  --soft-color: #d2e8c2;
-  --white-color: #cbcbcb;
-  --black-color: #071820;
+  --dark-color: #982626;
+  --soft-color: #e8c2c2;
+  --white-color: #f3e6e6;
+  --black-color: #300b0b;
   --border: 2px solid var(--dark-color);
-  --buttons: #565656;
-  --accent-titles: rgb(4, 4, 134);
+  --buttons: #5b0909;
+  --accent-titles: rgb(217, 7, 7);
 }
 
 body {
@@ -15,7 +15,7 @@ body {
   grid-template-columns: 1fr 4fr;
   gap: 2vw;
   background-color: var(--soft-color);
-  background-image: url("assets/s2152_gp1666_1488927427.png");
+  background-image: url("assets/s2152_gp1666_1488927427 red transparent.png");
 }
 
 * {
@@ -23,6 +23,7 @@ body {
   padding: 0;
   list-style: none;
   color: var(--black-color);
+  box-sizing: border-box;
 }
 
 header {
@@ -48,6 +49,7 @@ header {
   border-left: 3vw solid var(--dark-color);
   border-radius: 8px;
   border-bottom-right-radius: 20px;
+  background-color: var(--dark-color);
 }
 
 .nameLastname {
@@ -101,9 +103,11 @@ main {
 }
 
 .main {
+  margin-right: 1rem;
   display: grid;
+
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 1fr auto 1fr;
+  grid-template-rows: auto auto auto auto;
   gap: 2%;
 }
 
@@ -115,7 +119,7 @@ h1 {
   border: 1px solid var(--black-color);
   border-radius: 100px;
   color: var(--accent-titles);
-  text-shadow: var(--white-color) 1px 0 10px;
+  text-shadow: var(--buttons) 1px 0 10px;
   background-color: var(--dark-color);
   box-shadow: inset 0px 0px 5px 5px var(--buttons);
   padding: 0.5%;
@@ -136,8 +140,8 @@ article p {
   border-left: 3vw solid var(--dark-color);
   border-radius: 8px;
   border-bottom-right-radius: 20px;
-  height: 80%;
-  width: 80%;
+  height: auto;
+  width: auto;
   margin: 2%;
   background-color: var(--soft-color);
   padding: 1%;
@@ -147,7 +151,7 @@ h2 {
   border: 1px solid var(--black-color);
   border-radius: 100px;
   color: var(--accent-titles);
-  text-shadow: var(--white-color) 1px 0 10px;
+  text-shadow: var(--buttons) 1px 0 10px;
   background-color: var(--dark-color);
   box-shadow: inset 0px 0px 5px 5px var(--buttons);
   padding: 0.5%;
