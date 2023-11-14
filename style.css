@@ -42,7 +42,7 @@ header {
 
 .avatar {
   object-fit: contain;
-  height: 25vh;
+  height: 30vh;
   width: auto;
   border-block: 2vh solid var(--dark-color);
   border-inline: 2.5vw solid var(--dark-color);
@@ -54,6 +54,7 @@ header {
 
 .nameLastname {
   color: var(--accent-titles);
+  font-size: 1.1rem;
 }
 
 .contact {
@@ -118,7 +119,7 @@ h1 {
   font-size: xx-large;
   border: 1px solid var(--black-color);
   border-radius: 100px;
-  color: var(--accent-titles);
+  color: var(--white-color);
   text-shadow: var(--buttons) 1px 0 10px;
   background-color: var(--dark-color);
   box-shadow: inset 0px 0px 5px 5px var(--buttons);
@@ -150,7 +151,7 @@ article p {
 h2 {
   border: 1px solid var(--black-color);
   border-radius: 100px;
-  color: var(--accent-titles);
+  color: var(--white-color);
   text-shadow: var(--buttons) 1px 0 10px;
   background-color: var(--dark-color);
   box-shadow: inset 0px 0px 5px 5px var(--buttons);
@@ -158,3 +159,13 @@ h2 {
   padding-inline: 4%;
   width: fit-content;
 }
+ .formation p img {
+width: 3vw;
+display: inline;
+margin-left: auto;
+margin-right: auto;
+ }
+
+ strong {
+  font-size: larger;
+ }
